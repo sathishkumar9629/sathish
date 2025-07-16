@@ -1,0 +1,61 @@
+Lambda 
+
+Lambda Function (Function as a service)
+
+ It's Serverless computing.
+ Lets you run code without thinking about servers.
+
+Advantages:-
+ Pay-As-You-Go.
+
+Lambda Capstone Project 
+>>> Data Processing Function 
+
+Services:-
+S3 
+DynamoDB (NoSQL)
+Cloud Watch
+IAM
+
+Step To Configure:-
+
+Create a DynamoDB:-
+Create Table (table)
+Enter Table Name
+Partition Keys ---> id
+Create
+
+Create a function:-
+Create a function 
+Function name
+Set a Runtime
+Permissions ---> Change Default execution role 
+Excution role --> Use an Existing role (AmazonDynamoDBFullAccess,
+   AmazonS3ReadOnlyAccess,
+   AWSLambdaBasicExecutionRole)
+6. Create a Function
+
+Configuration of Functions:-
+Add Trigger
+Select source ---> S3
+Select the Bucket
+Event Types ---> (PUT)
+Suffix	---> Type .csv
+Add a Trigger
+Navigate to Code 
+Clear and Paste the Code 
+Change the DynamoDB table name ---> 
+Click to Deploy
+Navigate a Monitor tab
+View CloudWatch logs	
+
+
+
+
+
+
+
+
+
+
+
